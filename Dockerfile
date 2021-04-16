@@ -23,7 +23,7 @@ RUN apt-get install -y libminiupnpc-dev
 RUN apt-get install -y libzmq3-dev
 
 #build slavecoin source
-RUN ./autogen.sh
+RUN chmod +x autogen.sh
 RUN ./configure
 RUN make
 RUN make install
