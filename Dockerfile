@@ -24,7 +24,7 @@ RUN apt-get install -y libzmq3-dev
 
 #build slavecoin source
 RUN chmod +x autogen.sh
-RUN ./configure
+RUN chmod +x configure
 RUN make
 RUN make install
 
